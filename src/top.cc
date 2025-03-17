@@ -78,7 +78,7 @@ void fail(const char* format, ...) {
 // -fno-exceptions and we need to catch allocation failures on the device.
 // However the compiler does a lot of 'new'-ing and does not run on the device
 // so it gets to switch off this.
-bool throwing_new_allowed = false;
+bool throwing_new_allowed = true;
 
 }
 
